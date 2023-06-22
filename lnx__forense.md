@@ -34,3 +34,5 @@ Recordatorios adquisición evidencias:
 - `mkdir /mnt/datos/<caso1>`
 - `mount --rbind /mnt/datos/<caso1> /mnt/tools/mnt/ # como los .sh escribirán en /mnt,
 					            # monto /mnt/tools/mnt en el directorio del caso.`
+
+1:32:28
