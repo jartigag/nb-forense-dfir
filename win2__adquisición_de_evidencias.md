@@ -38,8 +38,8 @@ RawCopy lo reintentará con un método distinto, "INDX method":
 Si el disco está cifrado ("unrecognized file system"), solo se puede abrir como unidad lógica.
 
 - Evitar "Esta aplicación se ha bloqueado para protegerte":
-  ![](_Pasted image 20230515134738.png)
-  ![](_Pasted image 20230515134854.png)
+  ![](img/_Pasted image 20230515134738.png)
+  ![](img/_Pasted image 20230515134854.png)
 
 - AD1: AccessData (formato propietario de FTK). Para extraer los ficheros concretos que nos queremos llevar.
 	- Genera `imagen.ad1.txt`, que Lorenzo siempre adjunta como Anexo 2 (el Anexo 1 es su CV) al informe pericial.
