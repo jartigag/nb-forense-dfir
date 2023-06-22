@@ -28,8 +28,8 @@ Recordatorios adquisición evidencias:
 ### Pasos en máquina vulnerada
 
 - Crear directorios `/mnt/tools/` y `/mnt/datos/`
-
-- `mount -r /dev/sdb3 /mnt/tools`
+- 
+- `mount -r /dev/sdb3 /mnt/tools                           # -r: en readonly`
 - `mount /dev/sdb4 /mnt/datos`
 - `mkdir /mnt/datos/<nombre_caso>`
 - `mount --rbind /mnt/datos/<nombre caso> /mnt/tools/mnt/`
