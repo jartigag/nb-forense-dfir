@@ -11,5 +11,9 @@ Recordatorios adquisición evidencias:
 ## Extracción en vivo de máquina vulnerada
 
 - Usar herramientas fiables.
-	- Binarios y librerías de una instalación física de dos distros distintas.
-	- Caine 7 (basada en system5) y Kali 2016.2 (basada en systemd).
+	- Binarios y librerías de una instalación física en pendrive de dos distros distintas.
+	- El pendrive tiene cuatro particiones:
+		- Swap
+		- Caine 7 (basada en system5)
+		- Kali 2016.2 (basada en systemd)
+		- Datos (la más grande)
