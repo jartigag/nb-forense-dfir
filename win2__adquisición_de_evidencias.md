@@ -5,6 +5,7 @@ curso dfir win2 @ 2023-05-17T17:00-18:00
 # win2: adquisición de evidencias
 
 > Si un equipo está encendido: NO APAGARLO.
+
 -  Comparativa de herramientas de adquisición de memoria:
   https://unminioncurioso.blogspot.com/2019/02/dfir-elija-bien-su-arma-calcule-el.html
   
