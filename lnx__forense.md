@@ -23,7 +23,7 @@ Recordatorios adquisición evidencias:
 	- `irtool02.sh`
 	- `desmontalo.sh`
 
-- En los filesystems de linux (no NTFS), en vez de MFT/LogFile/Journal hay inodos.
+- En los filesystems de linux (EXT4), en vez de MFT/LogFile/Journal hay inodos.
 
 ### Pasos en máquina vulnerada
 
@@ -32,4 +32,6 @@ Recordatorios adquisición evidencias:
 - `mount -r /dev/sdb3 /mnt/tools                           # -r: en readonly`
 - `mount /dev/sdb4 /mnt/datos`
 - `mkdir /mnt/datos/<nombre_caso>`
-- `mount --rbind /mnt/datos/<nombre caso> /mnt/tools/mnt/`
+- `mount --rbind /mnt/datos/<nombre caso> /mnt/tools/mnt/` # como los .sh escribirán en /mnt,
+							   # monto /mnt/tools/mnt en el directorio
+ 							   # del caso.
