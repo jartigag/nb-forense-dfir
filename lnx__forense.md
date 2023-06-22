@@ -17,3 +17,8 @@ Recordatorios adquisición evidencias:
 		- Caine 7 (basada en system5)
 		- Kali 2016.2 (basada en systemd)
 		- Datos (la más grande)
+- Ejecución de scripts:
+	- `montalo.sh`
+	- `irtool01.sh`
+	- `irtool02.sh`
+	- `desmontalo.sh`
