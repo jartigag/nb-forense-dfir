@@ -29,8 +29,8 @@ Recordatorios adquisición evidencias:
 
 - Crear directorios `/mnt/tools/` y `/mnt/datos/`
 - 
-- `mount -r /dev/sdb3 /mnt/tools                          # -r: en readonly`
+- `mount -r /dev/sdb3 /mnt/tools                    # -r: en readonly`
 - `mount /dev/sdb4 /mnt/datos`
-- `mkdir /mnt/datos/<nombre_caso>`
-- `mount --rbind /mnt/datos/<nombre caso> /mnt/tools/mnt/ # como los .sh escribirán en /mnt,
-							  # monto /mnt/tools/mnt en el directorio del caso.`
+- `mkdir /mnt/datos/<caso1>`
+- `mount --rbind /mnt/datos/<caso1> /mnt/tools/mnt/ # como los .sh escribirán en /mnt,
+					            # monto /mnt/tools/mnt en el directorio del caso.`
