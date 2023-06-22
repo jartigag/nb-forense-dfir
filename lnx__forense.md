@@ -13,12 +13,23 @@ Recordatorios adquisición evidencias:
 - Usar herramientas fiables.
 	- Binarios y librerías de una instalación física en pendrive de dos distros distintas.
 	- El pendrive tiene cuatro particiones:
-		- Swap
-		- Caine 7 (basada en system5)
-		- Kali 2016.2 (basada en systemd)
-		- Datos (la más grande)
+		- `/dev/sdb1`: Swap
+		- `/dev/sdb2`: Caine 7 (basada en system5)
+		- `/dev/sdb3`: Kali 2016.2 (basada en systemd)
+		- `/dev/sdb4`: Datos (la más grande)
 - Ejecución de scripts:
 	- `montalo.sh`
 	- `irtool01.sh`
 	- `irtool02.sh`
 	- `desmontalo.sh`
+
+- En los filesystems de linux (no NTFS), en vez de MFT/LogFile/Journal hay inodos.
+
+### Pasos en máquina vulnerada
+
+- Crear directorios `/mnt/tools/` y `/mnt/datos/`
+
+- `mount -r /dev/sdb3 /mnt/tools`
+- `mount /dev/sdb4 /mnt/datos`
+- `mkdir /mnt/datos/<nombre_caso>`
+- `mount --rbind /mnt/datos/<nombre caso> /mnt/tools/mnt/`
