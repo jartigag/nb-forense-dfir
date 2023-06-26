@@ -18,10 +18,10 @@ Recordatorios adquisición evidencias:
 		- `/dev/sdb3`: Kali 2016.2 (basada en systemd)
 		- `/dev/sdb4`: Datos (la más grande)
 - Ejecución de scripts:
-	- `montalo.sh`
-	- `irtool01.sh`
-	- `irtool02.sh`
-	- `desmontalo.sh`
+	- `/mnt/tools/montalo.sh                      # `
+	- `./irtool01.sh /mnt/ && exit                # binarios propios, con chroot`
+	- `/mnt/tools/irtool02.sh /mnt/datos/<caso1>  # binarios de la víctima`
+	- `/mnt/tools/desmontalo.sh`
 
 - En los filesystems de linux (EXT4), en vez de MFT/LogFile/Journal hay inodos.
 
@@ -35,4 +35,4 @@ Recordatorios adquisición evidencias:
 - `mount --rbind /mnt/datos/<caso1> /mnt/tools/mnt/ # como los .sh escribirán en /mnt,
 					            # monto /mnt/tools/mnt en el directorio del caso.`
 
-1:32:28
+1:37:37
