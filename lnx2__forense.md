@@ -21,3 +21,5 @@ En una máquina con el mismo kernel que la víctima,
 git clone https://github.com/504ensicsLabs/LiME.git
 cd LiME/src; make
 ```
+
+0:56:30
