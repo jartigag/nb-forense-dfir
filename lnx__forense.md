@@ -27,6 +27,8 @@ Recordatorios adquisición evidencias:
 
 ### Pasos en máquina vulnerada
 
+- [ ] Preparar usb con `ir_usb.7z` y pasarlo sobre `Pwned.ova` (1:07:00)
+
 - Crear directorios `/mnt/tools/` y `/mnt/datos/`
 - 
 - `mount -r /dev/sdb3 /mnt/tools                    # -r: en readonly`
@@ -35,4 +37,6 @@ Recordatorios adquisición evidencias:
 - `mount --rbind /mnt/datos/<caso1> /mnt/tools/mnt/ # como los .sh escribirán en /mnt,
 					            # monto /mnt/tools/mnt en el directorio del caso.`
 
-1:37:37
+- Después de ejecutar todo, asegurarse de que no hay nada cifrado que pueda corromperse y,
+  si es así, tiramos del cable de corriente**
+	- ** [ ] ¿por qué nos interesa tirar desconectar la corriente en este caso?
