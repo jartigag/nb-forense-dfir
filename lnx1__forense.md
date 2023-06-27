@@ -27,7 +27,17 @@ Recordatorios adquisición evidencias:
 
 ### Pasos en máquina vulnerada
 
-- [ ] Preparar usb con `ir_usb.7z` y pasarlo sobre `Pwned.ova` (1:07:00)
+- [/] Preparar usb con `ir_usb.7z` y pasarlo sobre `Pwned.ova` (1:07:00)
+  $ sudo dd if=ir_usb.dd of=/dev/sda1 bs=8M status=progress
+  [sudo] password for javi: 
+  31004295168 bytes (31 GB, 29 GiB) copied, 2504 s, 12,4 MB/s
+  3696+0 registros leídos
+  3696+0 registros escritos
+  31004295168 bytes (31 GB, 29 GiB) copied, 2504,2 s, 12,4 MB/s
+  javi@debian:~/Escritorio/20230508-securizame/LNX/practica
+  $ sudo mount /dev/sda1 /mnt/tools
+  [sudo] password for javi: 
+  mount: /mnt/tools: tipo de sistema de ficheros incorrecto, opción incorrecta, superbloque incorrecto en /dev/sda1, falta la página de códigos o el programa auxiliar, o algún otro error.
 
 - Crear directorios `/mnt/tools/` y `/mnt/datos/`
 - 
